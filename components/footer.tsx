@@ -90,7 +90,7 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-6 flex justify-center">
-          <p className="text-sm text-primary-foreground/60">© 2024 Boumiza Square. Tous droits réservés.</p>
+          <p className="text-sm text-primary-foreground/60">© 2025 Boumiza Square. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
