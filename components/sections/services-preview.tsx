@@ -1,5 +1,9 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
-import { Wifi, Users, Baby, Sofa, Cigarette, Zap, CreditCard, Gift, Accessibility } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Wifi, Users, Baby, Sofa, Cigarette, Zap, CreditCard, Gift, Accessibility, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const services = [
   {
@@ -75,6 +79,15 @@ export function ServicesPreview() {
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </Card>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Link href="/services">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Voir tous les services
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

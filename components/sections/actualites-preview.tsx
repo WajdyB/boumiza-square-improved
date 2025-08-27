@@ -1,6 +1,9 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Calendar, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const actualites = [
   {
@@ -68,10 +71,12 @@ export function ActualitesPreview() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Toutes les actualités
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/actualites">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Toutes les actualités
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const enseignes = [
   {
@@ -168,10 +169,12 @@ export function EnseignesPreview() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Voir toutes les enseignes
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href="/enseignes">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Voir toutes les enseignes
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

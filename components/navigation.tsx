@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { LanguageSwitcher } from "./language-switcher"
 import { Menu, X, Facebook, Instagram } from "lucide-react"
 
 const navigation = [
@@ -102,7 +101,6 @@ export function Navigation() {
               </svg>
             </Link>
           </div>
-          <LanguageSwitcher />
         </div>
       </nav>
 
@@ -141,9 +139,6 @@ export function Navigation() {
                       {item.name}
                     </Link>
                   ))}
-                </div>
-                <div className="py-6">
-                  <LanguageSwitcher />
                 </div>
               </div>
             </div>
