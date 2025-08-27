@@ -20,7 +20,27 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Boumiza Square",
-  description: "Découvrez Boumiza Square, votre destination gastronomique et de loisirs moderne et dynamique."
+  description: "Découvrez Boumiza Square, votre destination gastronomique et de loisirs moderne et dynamique.",
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Boumiza Square",
+    description: "Découvrez Boumiza Square, votre destination gastronomique et de loisirs moderne et dynamique.",
+    type: "website",
+    locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Boumiza Square",
+    description: "Découvrez Boumiza Square, votre destination gastronomique et de loisirs moderne et dynamique.",
+  },
 }
 
 export default function RootLayout({
